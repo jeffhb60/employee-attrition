@@ -13,8 +13,10 @@ FIGURES_DIR = PROJECT_ROOT / "figures"
 NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
 
 TRAIN_RAW_PATH = RAW_DATA_DIR / "train.csv"
+TEST_RAW_PATH = RAW_DATA_DIR / "test.csv"
 
 TRAIN_CLEAN_PATH = PROCESSED_DATA_DIR / "train_clean.csv"
+TEST_CLEAN_PATH = PROCESSED_DATA_DIR / "test_clean.csv"
 
 MODEL_RESULTS_PATH = RESULTS_DIR / "model_results.csv"
 OOF_PREDICTIONS_PATH = RESULTS_DIR / "oof_predictions.csv"
@@ -27,3 +29,10 @@ for directory in [
     RESULTS_DIR, FIGURES_DIR, NOTEBOOKS_DIR
 ]:
     directory.mkdir(parents=True, exist_ok=True)
+
+# Feature-engineered and model-ready data
+TRAIN_FEATURED_PATH = PROCESSED_DATA_DIR / "train_featured.csv"
+MODEL_DATA_DIR = DATA_DIR / "model_ready"
+SPLIT_MANIFEST_PATH = MODEL_DATA_DIR / "split_manifest.csv"
+
+MODEL_DATA_DIR.mkdir(parents=True, exist_ok=True)
