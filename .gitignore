@@ -1,2 +1,7 @@
 .idea/
 .venv/
+data/model_ready/
+data/processed/
+results/
+figures/
+models/
