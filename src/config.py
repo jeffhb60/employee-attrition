@@ -14,7 +14,7 @@ NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
 TRAIN_RAW_PATH = RAW_DATA_DIR / "train.csv"
 # TEST_RAW_PATH = RAW_DATA_DIR / "test.csv"
 TRAIN_CLEAN_PATH = PROCESSED_DATA_DIR / "train_clean.parquet"
-TEST_CLEAN_PATH = PROCESSED_DATA_DIR / "test_clean.parquet"
+# TEST_CLEAN_PATH = PROCESSED_DATA_DIR / "test_clean.parquet"
 MODEL_RESULTS_PATH = RESULTS_DIR / "model_results.csv"
 OOF_PREDICTIONS_PATH = RESULTS_DIR / "oof_predictions.csv"
 
