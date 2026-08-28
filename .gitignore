@@ -1,7 +1,7 @@
 .idea/
 .venv/
-data/model_ready/
+data/
 figures/
 models/
-/data/processed/
 /results/
+.env
